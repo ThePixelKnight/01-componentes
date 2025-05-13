@@ -69,5 +69,16 @@
       "icon": "refresh-outline",
       "name": "Loading",
       "redirectTo": "/loading"
+    },
+    {
+      "icon": "chatbox-outline",
+      "name": "Modal",
+      "redirectTo": "/modal"
+    },
+    {
+      "icon": "caret-down-outline",
+      "name": "Popover",
+      "redirectTo": "/popover"
     }
+
 ]

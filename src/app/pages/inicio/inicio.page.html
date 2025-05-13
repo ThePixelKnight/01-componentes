@@ -9,14 +9,5 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item
-      detail="true"
-      *ngFor="let component of components | async"
-      [routerLink]="component.redirectTo"
-    >
-      <ion-icon slot="start" [name]="component.icon" color="primary"></ion-icon>
-      {{component.name}}
-    </ion-item>
-  </ion-list>
+  
 </ion-content>

@@ -41,7 +41,8 @@ export const routes: Routes = [
   {
     path: 'fab',
     loadComponent: () => import('./pages/fab/fab.page').then( m => m.FabPage)
-  },  {
+  },
+  {
     path: 'grid',
     loadComponent: () => import('./pages/grid/grid.page').then( m => m.GridPage)
   },
@@ -64,6 +65,14 @@ export const routes: Routes = [
   {
     path: 'loading',
     loadComponent: () => import('./pages/loading/loading.page').then( m => m.LoadingPage)
+  },
+  {
+    path: 'modal',
+    loadComponent: () => import('./pages/modal/modal.page').then( m => m.ModalPage)
+  },
+  {
+    path: 'popover',
+    loadComponent: () => import('./pages/popover/popover.page').then( m => m.PopoverPage)
   },
 
 ];

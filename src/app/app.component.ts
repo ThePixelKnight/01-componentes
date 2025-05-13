@@ -37,6 +37,8 @@ import {
     listOutline,
     reorderThreeOutline,
     refreshOutline,
+    chatboxOutline,
+    caretDownOutline,
  } from 'ionicons/icons';
 
 @Component({
@@ -77,6 +79,8 @@ export class AppComponent {
       listOutline,
       reorderThreeOutline,
       refreshOutline,
+      chatboxOutline,
+      caretDownOutline
     });
   }
 
