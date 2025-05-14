@@ -39,6 +39,7 @@ import {
     refreshOutline,
     chatboxOutline,
     caretDownOutline,
+    codeWorkingOutline,
  } from 'ionicons/icons';
 
 @Component({
@@ -80,7 +81,8 @@ export class AppComponent {
       reorderThreeOutline,
       refreshOutline,
       chatboxOutline,
-      caretDownOutline
+      caretDownOutline,
+      codeWorkingOutline,
     });
   }
 
