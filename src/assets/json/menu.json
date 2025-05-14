@@ -78,7 +78,14 @@
     {
       "icon": "caret-down-outline",
       "name": "Popover",
-      "redirectTo": "/popover"
+      "redirectTo": "/progress-range"
+    },
+    {
+      "icon": "code-working-outline",
+      "name": "Progress Bar & Range",
+      "redirectTo": "/progress-range"
     }
+    
+    
 
 ]
