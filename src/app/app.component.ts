@@ -40,6 +40,8 @@ import {
     chatboxOutline,
     caretDownOutline,
     codeWorkingOutline,
+    chevronDownCircleOutline,
+    searchOutline
  } from 'ionicons/icons';
 
 @Component({
@@ -83,6 +85,8 @@ export class AppComponent {
       chatboxOutline,
       caretDownOutline,
       codeWorkingOutline,
+      chevronDownCircleOutline,
+      searchOutline
     });
   }
 

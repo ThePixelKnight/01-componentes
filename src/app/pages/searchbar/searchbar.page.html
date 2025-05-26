@@ -1,0 +1,37 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+     
+      
+      <ion-back-button defaultHref="/" 
+                       class="ion-text-capitalize" 
+                       text="regresar"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title class="ion-text-capitalize">searchbar</ion-title>
+
+  </ion-toolbar>
+
+  <ion-searchbar mode="ios"
+                 placeholder="Buscar" 
+                 inputmode="text" 
+                 animated="true" 
+                 (ionChange)="onSearchChange($event)" 
+                 [debounce]="250">
+  </ion-searchbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    
+      <ion-item *ngFor="let album of albums | searchFilter:searchText">
+        <ion-label>{{album.title}}</ion-label>
+      </ion-item>
+    
+  </ion-list>
+
+</ion-content>

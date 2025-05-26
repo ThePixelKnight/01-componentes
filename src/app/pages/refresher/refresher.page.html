@@ -1,0 +1,21 @@
+<app-header title="refresher"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content>
+     
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+    @for (item of items; track $index) {
+      <ion-item class="animate__animated animate__fadeIn">
+        <ion-label>
+          Item {{$index + 1}}
+        </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+
+</ion-content>

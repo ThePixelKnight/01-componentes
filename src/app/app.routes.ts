@@ -77,6 +77,14 @@ export const routes: Routes = [
     path: 'progress-range',
     loadComponent: () => import('./pages/progress-range/progress-range.page').then( m => m.ProgressRangePage)
   },
+  {
+    path: 'refresher',
+    loadComponent: () => import('./pages/refresher/refresher.page').then( m => m.RefresherPage)
+  },
+  {
+    path: 'searchbar',
+    loadComponent: () => import('./pages/searchbar/searchbar.page').then( m => m.SearchbarPage)
+  },
 
 
 ];

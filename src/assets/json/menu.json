@@ -84,8 +84,15 @@
       "icon": "code-working-outline",
       "name": "Progress Bar & Range",
       "redirectTo": "/progress-range"
+    },
+    {
+      "icon": "chevron-down-circle-outline",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
+    },
+    {
+      "icon": "search-outline",
+      "name": "Searchbar",
+      "redirectTo": "/searchbar"
     }
-    
-    
-
 ]

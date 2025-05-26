@@ -15,11 +15,16 @@ export class UsersService {
     return this.httpClient.get(`https://jsonplaceholder.typicode.com/users`);
   }
   
+  getMenu(){
+    return this.httpClient.get<ComponentsIntf[]>(`assets/json/menu.json`);
+  }
+  
+  getAlbums(){
+    return this.httpClient.get<any[]>(`https://jsonplaceholder.typicode.com/albums`)
+  }
+
   deleteUser(id: any) {
     return this.httpClient.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
   }
 
-  getMenu(){
-    return this.httpClient.get<ComponentsIntf[]>(`assets/json/menu.json`);
-  }
 }
