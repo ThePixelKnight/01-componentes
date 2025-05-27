@@ -1,0 +1,43 @@
+<app-header title="segment"></app-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-segment>
+    <ion-segment-button value="first" content-id="first">
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="second" content-id="second">
+      <ion-icon name="people-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-segment-view>
+    <ion-segment-content id="first">
+      <h2 class="ion-padding">You</h2>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="assets/images/tilordqwerty.webp"></ion-img>
+        </ion-avatar>
+        <ion-label>&#64;ThePixelKnight</ion-label>
+      </ion-item>
+    </ion-segment-content>
+
+    <ion-segment-content id="second">
+      <h2 class="ion-padding">Your Community</h2>
+
+      <ion-list>
+        @for (item of users; track item; let index = $index) {
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img [src]="'https://picsum.photos/80/80?random=' + index" />
+          </ion-avatar>
+          <ion-label class="ion-text-capitalize">user {{index + 1}}</ion-label>
+        </ion-item>
+        }
+
+      </ion-list>
+    </ion-segment-content>
+  </ion-segment-view>
+</ion-content>
