@@ -27,12 +27,12 @@ export class ActionSheetPage {
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtrl.create({
-      header: 'Opciones',
+      header: 'Options',
       backdropDismiss: false,
       mode:'ios',
       buttons: [
         {
-          text: 'Borrar',
+          text: 'Delete',
           role: 'destructive',
           icon: 'trash-outline',
           cssClass: 'red-icon',
@@ -41,14 +41,14 @@ export class ActionSheetPage {
           },
         },
         {
-          text: 'Compartir',
+          text: 'Share',
           icon: 'share-outline',
           data: {
             action: 'share',
           },
         },
         {
-          text: 'Cancelar',
+          text: 'Cancel',
           role: 'cancel',
           icon: 'remove-circle-outline',
           data: {
