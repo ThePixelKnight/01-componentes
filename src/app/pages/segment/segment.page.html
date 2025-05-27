@@ -1,7 +1,6 @@
 <app-header title="segment"></app-header>
 
 <ion-content [fullscreen]="true">
-
   <ion-segment>
     <ion-segment-button value="first" content-id="first">
       <ion-icon name="person-outline"></ion-icon>
@@ -19,25 +18,54 @@
         <ion-avatar slot="start">
           <ion-img src="assets/images/tilordqwerty.webp"></ion-img>
         </ion-avatar>
-        <ion-label>&#64;ThePixelKnight</ion-label>
+        <ion-label>
+          <h3>&#64;ThePixelKnight</h3>
+          <p>(412)573 885932</p>
+        </ion-label>
       </ion-item>
     </ion-segment-content>
 
     <ion-segment-content id="second">
-      <h2 class="ion-padding">Your Community</h2>
+      <h2 class="ion-padding">All</h2>
 
       <ion-list>
-        @for (item of users; track item; let index = $index) {
-
-        <ion-item>
+        
+        <ion-item *ngFor="let user of users | async">
           <ion-avatar slot="start">
-            <img [src]="'https://picsum.photos/80/80?random=' + index" />
+              <ion-img
+                [src]="'https://picsum.photos/80/80?random='"
+              ></ion-img>
           </ion-avatar>
-          <ion-label class="ion-text-capitalize">user {{index + 1}}</ion-label>
+          <ion-label class="ion-text-capitalize">
+              <h3>
+                &#64;{{user.name}}
+              </h3>
+              <p>{{user.phone}}</p>
+          </ion-label>
         </ion-item>
-        }
+    
+      </ion-list>
+      
+      <ion-list *ngIf="(users | async) === null">  
+        
+        <ion-item *ngFor="let item of [1,1,1,1,1,1,1,1,1]">
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated style="width: 30px; height: 30px;"></ion-skeleton-text>
+          </ion-avatar>
+          <ion-label class="ion-text-capitalize">
+            <h3>
+                <ion-skeleton-text animated style="width: 70%">
+                </ion-skeleton-text>
+            </h3>
+              <p>
+                <ion-skeleton-text animated style="width: 100%">
+                </ion-skeleton-text>
+              </p>
+          </ion-label>
+        </ion-item>
 
       </ion-list>
+        
     </ion-segment-content>
   </ion-segment-view>
 </ion-content>

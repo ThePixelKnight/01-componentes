@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { ComponentsIntf } from '../interfaces/Components';
+import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,10 @@ export class UsersService {
   constructor() {}
   
   getUsers(){
-    return this.httpClient.get(`https://jsonplaceholder.typicode.com/users`);
+    return this.httpClient.get(`https://jsonplaceholder.typicode.com/users`)
+              .pipe(
+                delay(3000)
+              );
   }
   
   getMenu(){

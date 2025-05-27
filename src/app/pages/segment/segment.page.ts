@@ -8,17 +8,29 @@ import {
   IonLabel,
   IonSegmentContent,
   IonSegmentView,
-  IonIcon, IonAvatar, IonImg, IonItem, IonTitle, IonToolbar, IonHeader, IonList } from '@ionic/angular/standalone';
+  IonIcon, 
+  IonAvatar, 
+  IonImg, 
+  IonItem, 
+  IonList, 
+  IonSkeletonText 
+} from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { personOutline, peopleOutline } from 'ionicons/icons';
+import { 
+  personOutline, 
+  peopleOutline, 
+  chatbubblesOutline 
+} from 'ionicons/icons';
 import { HeaderComponent } from '../../components/header/header.component';
+import { Observable } from 'rxjs';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-segment',
   templateUrl: './segment.page.html',
   styleUrls: ['./segment.page.scss'],
   standalone: true,
-  imports: [
+  imports: [IonSkeletonText, 
     IonList,
     IonItem, 
     IonImg, 
@@ -37,12 +49,21 @@ import { HeaderComponent } from '../../components/header/header.component';
 })
 export class SegmentPage implements OnInit {
   
-  users: any[] = Array(20);
+  users!: Observable<any>;
   
-  constructor() {
-    addIcons({personOutline,peopleOutline});
+  constructor(private usersService: UsersService) {
+    addIcons({
+      personOutline,
+      chatbubblesOutline,
+      peopleOutline});
   }
 
+  ngOnInit() {
+    this.showUsers()
+  }
 
-  ngOnInit() {}
+  showUsers(){
+    this.users = this.usersService.getUsers()
+  }
+
 }
