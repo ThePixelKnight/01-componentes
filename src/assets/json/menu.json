@@ -94,5 +94,10 @@
       "icon": "search-outline",
       "name": "Searchbar",
       "redirectTo": "/searchbar"
+    },
+    {
+      "icon": "ellipsis-horizontal-circle-outline",
+      "name": "Segment",
+      "redirectTo": "/segment"
     }
 ]
