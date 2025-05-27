@@ -41,7 +41,8 @@ import {
     caretDownOutline,
     codeWorkingOutline,
     chevronDownCircleOutline,
-    searchOutline
+    searchOutline,
+    ellipsisHorizontalCircleOutline
  } from 'ionicons/icons';
 
 @Component({
@@ -86,7 +87,8 @@ export class AppComponent {
       caretDownOutline,
       codeWorkingOutline,
       chevronDownCircleOutline,
-      searchOutline
+      searchOutline,
+      ellipsisHorizontalCircleOutline
     });
   }
 

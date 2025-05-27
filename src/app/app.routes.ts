@@ -85,6 +85,10 @@ export const routes: Routes = [
     path: 'searchbar',
     loadComponent: () => import('./pages/searchbar/searchbar.page').then( m => m.SearchbarPage)
   },
+  {
+    path: 'segment',
+    loadComponent: () => import('./pages/segment/segment.page').then( m => m.SegmentPage)
+  },
 
 
 ];
