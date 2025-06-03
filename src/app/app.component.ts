@@ -42,7 +42,8 @@ import {
     codeWorkingOutline,
     chevronDownCircleOutline,
     searchOutline,
-    ellipsisHorizontalCircleOutline
+    ellipsisHorizontalCircleOutline,
+    imagesOutline
  } from 'ionicons/icons';
 
 @Component({
@@ -88,7 +89,8 @@ export class AppComponent {
       codeWorkingOutline,
       chevronDownCircleOutline,
       searchOutline,
-      ellipsisHorizontalCircleOutline
+      ellipsisHorizontalCircleOutline,
+      imagesOutline
     });
   }
 

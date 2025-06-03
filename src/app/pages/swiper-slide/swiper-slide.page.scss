@@ -1,0 +1,60 @@
+.slide{
+    background-color: rgb(127, 201, 176);
+    margin: auto;
+}
+
+swiper-slide{
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  font-size: 18px;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+ion-card {
+    overflow: unset !important;
+}
+
+ion-card {
+    height: 330px;
+    width: 300px;
+}
+
+.slide-image {
+    width: 100px;
+    text-align: center;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    top: 7px;
+}
+
+ion-card-header {
+    position: relative;
+    top: 20px;
+}
+
+ion-card-content {
+    position: relative;
+    top: 26px;
+}
+
+.avatar {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

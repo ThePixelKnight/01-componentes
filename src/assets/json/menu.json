@@ -99,5 +99,10 @@
       "icon": "ellipsis-horizontal-circle-outline",
       "name": "Segment",
       "redirectTo": "/segment"
+    },
+    {
+      "icon": "images-outline",
+      "name": "Swiper-Slide",
+      "redirectTo": "/swiper-slide"
     }
 ]
