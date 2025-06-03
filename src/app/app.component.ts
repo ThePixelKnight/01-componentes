@@ -13,8 +13,7 @@ import {
   IonMenuToggle,
   IonIcon,
   IonList,
-  IonItem,
-} from '@ionic/angular/standalone';
+  IonItem, IonSplitPane } from '@ionic/angular/standalone';
 import { MenuController } from '@ionic/angular/standalone';
 
 import { UsersService } from './services/users.service';
@@ -49,7 +48,7 @@ import {
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  imports: [
+  imports: [IonSplitPane, 
     IonItem,
     IonList,
     IonIcon,
