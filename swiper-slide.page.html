@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  
+  <swiper-container>
+
+    @for (slide of slides; track $index) {
+    <swiper-slide class="ion-padding slide slide-full">
+      
+        <ion-card mode="ios">
+          <img [src]="slide.img" class="slide-image">
+        
+          <ion-card-header>
+            <ion-card-title>{{slide.title}}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{slide.desc}}
+          </ion-card-content>
+
+        </ion-card>
+
+      </swiper-slide>
+    }
+
+    <swiper-slide  class="slide">
+      <ion-button (click)="goToHome()" expand="block">
+        Start now
+      </ion-button>
+    </swiper-slide>
+    
+  </swiper-container>
+</ion-content>
