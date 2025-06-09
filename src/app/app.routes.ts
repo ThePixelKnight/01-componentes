@@ -93,6 +93,10 @@ export const routes: Routes = [
     path: 'swiper-slide',
     loadComponent: () => import('./pages/swiper-slide/swiper-slide.page').then( m => m.SwiperSlidePage)
   },
+  {
+    path: 'tabs',
+    loadComponent: () => import('./pages/tabs/tabs.page').then( m => m.TabsPage)
+  },
 
 
 ];

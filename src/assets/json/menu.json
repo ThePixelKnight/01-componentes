@@ -104,5 +104,10 @@
       "icon": "images-outline",
       "name": "Swiper-Slide",
       "redirectTo": "/swiper-slide"
+    },
+    {
+      "icon": "flower-outline",
+      "name": "Tabs",
+      "redirectTo": "/tabs"
     }
 ]
