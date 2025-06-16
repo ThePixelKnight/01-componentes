@@ -108,6 +108,6 @@
     {
       "icon": "flower-outline",
       "name": "Tabs",
-      "redirectTo": "/tabs"
+      "redirectTo": "/tabs/home"
     }
 ]

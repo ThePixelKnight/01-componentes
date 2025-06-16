@@ -42,7 +42,8 @@ import {
     chevronDownCircleOutline,
     searchOutline,
     ellipsisHorizontalCircleOutline,
-    imagesOutline
+    imagesOutline,
+    flowerOutline
  } from 'ionicons/icons';
 
 @Component({
@@ -89,7 +90,8 @@ export class AppComponent {
       chevronDownCircleOutline,
       searchOutline,
       ellipsisHorizontalCircleOutline,
-      imagesOutline
+      imagesOutline,
+      flowerOutline
     });
   }
 

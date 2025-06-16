@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { TabsPage } from './pages/tabs/tabs.page';
 
 export const routes: Routes = [
   {
@@ -6,7 +7,7 @@ export const routes: Routes = [
     redirectTo: 'inicio',
     pathMatch: 'full',
   },
-  {
+    {
     path: 'inicio',
     loadComponent: () => import('./pages/inicio/inicio.page').then( m => m.InicioPage)
   },
@@ -73,7 +74,8 @@ export const routes: Routes = [
   {
     path: 'popover',
     loadComponent: () => import('./pages/popover/popover.page').then( m => m.PopoverPage)
-  },  {
+  },
+  {
     path: 'progress-range',
     loadComponent: () => import('./pages/progress-range/progress-range.page').then( m => m.ProgressRangePage)
   },
@@ -95,8 +97,6 @@ export const routes: Routes = [
   },
   {
     path: 'tabs',
-    loadComponent: () => import('./pages/tabs/tabs.page').then( m => m.TabsPage)
+    loadComponent: () => import('./pages/tabs/tabs.page').then( m => m.TabsPage),
   },
-
-
 ];
